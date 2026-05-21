@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f1eb; 
+    color: #4a3b32;            
+    padding: 40px 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    color: #8c6239;           
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    color: #b392ac;            
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+h3 {
+    width: 100%;              
+    color: #a0522d;            
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e1d4c7; 
+    padding-bottom: 5px;
+}
+
+form {
+    max-width: 1100px;        
+    margin: 0 auto;
+}
+
+.kategori-wrapper {
+    display: flex;
+    flex-wrap: wrap;           
+    gap: 20px;                 
+}
+
+.item-bahan {
+    background-color: #ffffff;  
+    border: 1px solid #e8dfd8; 
+    border-radius: 12px;        
+    padding: 16px;
+   
+    width: calc(33.333% - 14px); 
+    display: flex;
+    align-items: flex-start;    
+    box-shadow: 0 4px 6px rgba(140, 98, 57, 0.03); 
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.item-bahan:hover {
+    transform: translateY(-3px); 
+    border-color: #cda27d;       
+    box-shadow: 0 8px 15px rgba(140, 98, 57, 0.08);
+}
+
+.item-bahan input[type="checkbox"] {
+    margin-top: 4px;
+    margin-right: 14px;
+    transform: scale(1.25);      
+    cursor: pointer;
+    accent-color: #8c6239;       
+}
+
+.item-bahan label {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.item-bahan strong {
+    font-size: 16px;
+    color: #5c4738;             
+}
+
+.item-bahan .harga {
+    color: #b77b56;              
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-bahan small {
+    display: block;
+    margin-top: 8px;
+    color: #8a776a;              
+    font-size: 12.5px;
+    line-height: 1.4;
+    font-style: italic;          
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #fffdfb;
+    border: 1px solid #e8dfd8;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.form-footer label {
+    font-weight: 600;
+    color: #5c4738;
+}
+
+.form-footer input[type="number"] {
+    padding: 8px 12px;
+    width: 80px;
+    font-size: 16px;
+    border: 1px solid #dcd1c4;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #fbf9f6;
+    color: #4a3b32;
+    margin-left: 10px;
+}
+
+button{
+    background-color: #8c6239;   
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #734f2d;   
+}
+
+button:active {
+    transform: scale(0.98);      
+}
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 25px 0;
+    box-shadow: 0 4px 10px rgba(140, 98, 57, 0.05);
+    border: 1px solid #e8dfd8;
+}
+
+th {
+    background-color: #8c6239; 
+    color: #ffffff;
+    padding: 14px 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+td {
+    padding: 12px 16px;
+    color: #4a3b32;
+    border-bottom: 1px solid #f2ece6;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td a {
+    color: #b77b56;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+td a:hover {
+    color: #a0522d;
+    text-decoration: underline;
+}
+
+form[action*="keranjang"] {
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+}
